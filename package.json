@@ -1,18 +1,17 @@
 {
-  "name": "stringint",
+  "name": "stringto",
   "version": "1.0.0",
-  "description": "convert string to number",
+  "description": "map string to item from array",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine JASMINE_CONFIG_PATH=./test/spec/toInt.json"
+    "test": "jasmine JASMINE_CONFIG_PATH=./test/spec/test.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavlikm/stringint.git"
+    "url": "git+https://github.com/pavlikm/stringto.git"
   },
   "keywords": [
     "string",
-    "integer",
     "convert",
     "map",
     "routing",
@@ -21,9 +20,9 @@
   "author": "pavlikm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavlikm/stringint/issues"
+    "url": "https://github.com/pavlikm/stringto/issues"
   },
-  "homepage": "https://github.com/pavlikm/stringint#readme",
+  "homepage": "https://github.com/pavlikm/stringto#readme",
   "dependencies": {
     "jasmine": "^3.7.0"
   }
