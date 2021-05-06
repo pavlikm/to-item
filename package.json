@@ -1,0 +1,30 @@
+{
+  "name": "stringint",
+  "version": "1.0.0",
+  "description": "convert string to number",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=./test/spec/toInt.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavlikm/stringint.git"
+  },
+  "keywords": [
+    "string",
+    "integer",
+    "convert",
+    "map",
+    "routing",
+    "hash"
+  ],
+  "author": "pavlikm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavlikm/stringint/issues"
+  },
+  "homepage": "https://github.com/pavlikm/stringint#readme",
+  "dependencies": {
+    "jasmine": "^3.7.0"
+  }
+}
