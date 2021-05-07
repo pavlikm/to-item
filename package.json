@@ -1,14 +1,14 @@
 {
-  "name": "stringto",
+  "name": "toItem",
   "version": "1.0.0",
-  "description": "map string to item from array",
+  "description": "converts object to one item of given set",
   "main": "index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=./test/spec/test.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavlikm/stringto.git"
+    "url": "git+https://github.com/pavlikm/toItem.git"
   },
   "keywords": [
     "string",
@@ -20,9 +20,9 @@
   "author": "pavlikm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavlikm/stringto/issues"
+    "url": "https://github.com/pavlikm/toItem/issues"
   },
-  "homepage": "https://github.com/pavlikm/stringto#readme",
+  "homepage": "https://github.com/pavlikm/toItem#readme",
   "dependencies": {
     "jasmine": "^3.7.0"
   }
