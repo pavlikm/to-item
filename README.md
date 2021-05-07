@@ -1,4 +1,4 @@
-[![Node.js CI](https://github.com/pavlikm/to-item/actions/workflows/node-build.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/node-build.yml)
+[![Node.js CI](https://github.com/pavlikm/to-item/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/npm-publish.yml)
 [![CodeQL](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml)
 
 # to-item
@@ -17,11 +17,14 @@ require('to-item');
 //basic usage
 "Some String".to([10, 15, 20]);  //15
 
-//get db ip by user id
-let host = idUser.to(['10.0.0.120', '10.0.0.121', '10.0.0.122']);
-
 //run AB test by cookie value
 let service = cookieValue.to([new ServiceA(), new ServiceB()]);
 service.run();
+
+//get random ip from pool
+let host = Math.random().to(['10.0.0.120', '10.0.0.121', '10.0.0.122']);
+
+//get Tip of the day
+let tip = (new Date()).getDay().to(arrayOfDailyTips);
 
 ```
