@@ -1,4 +1,3 @@
-[![Node.js CI](https://github.com/pavlikm/to-item/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/npm-publish.yml)
 [![CodeQL](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml)
 
 # to-item
