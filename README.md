@@ -1,3 +1,6 @@
+[![Node.js CI](https://github.com/pavlikm/to-item/actions/workflows/node-build.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/node-build.yml)
+[![CodeQL](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml)
+
 # to-item
 map object to one item of given set
 
