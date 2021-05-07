@@ -82,6 +82,16 @@ describe('/convert to set', () => {
         done();
     })
 
+    it('should always return same result for same input', (done) => {
+        let array = new Array(10);
+        let value1 = "test".to(array);
+        let value2 = "test".to(array);
+        let value3 = "test".to(array);
+        expect(value1).toBe(value2);
+        expect(value1).toBe(value3);
+        done();
+    })
+
     it('should ignore orders in set', (done) => {
         let array = [234, 284, 22, 1, 40, 2876, 48, 234];
         let value1 = "test".to(array)
