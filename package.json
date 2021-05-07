@@ -1,5 +1,5 @@
 {
-  "name": "toItem",
+  "name": "to-item",
   "version": "1.0.0",
   "description": "converts object to one item of given set",
   "main": "index.js",
@@ -8,10 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavlikm/toItem.git"
+    "url": "git+https://github.com/pavlikm/to-item.git"
   },
   "keywords": [
     "string",
+    "object",
     "convert",
     "map",
     "routing",
@@ -20,9 +21,9 @@
   "author": "pavlikm",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavlikm/toItem/issues"
+    "url": "https://github.com/pavlikm/to-item/issues"
   },
-  "homepage": "https://github.com/pavlikm/toItem#readme",
+  "homepage": "https://github.com/pavlikm/to-item#readme",
   "dependencies": {
     "jasmine": "^3.7.0"
   }

@@ -1,15 +1,15 @@
-# toItem
+# to-item
 map object to one item of given set
 
 ### Instalation
-```npm install toItem```
+```npm install to-item```
 
 ### Test
 ```npm run test```
 
 ### Usage
 ```javascript
-require('toItem');
+require('to-item');
 
 //basic usage
 "Some String".to([10, 15, 20]);  //15
