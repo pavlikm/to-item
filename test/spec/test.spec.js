@@ -111,6 +111,17 @@ describe('/convert to set', () => {
         done();
     })
 
+    it('should work with empty set', (done) => {
+        let array = [];
+        expect("test".to(array)).toEqual(undefined);
+        done();
+    })
+
+    it('should return original string if no parameter is given', (done) => {
+        expect("test".to()).toEqual("test");
+        done();
+    })
+
 });
 
 
