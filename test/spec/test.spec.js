@@ -8,50 +8,6 @@ class SomeObject {
 let obj = new SomeObject();
 require('../../index');
 
-describe('/convert string to int', () => {
-
-    it('should convert empty string', (done) => {
-        expect("".toInt()).toEqual(jasmine.any(Number));
-        done();
-    });
-
-    it('should convert number string', (done) => {
-        expect("123".toInt()).toEqual(jasmine.any(Number));
-        done();
-    });
-
-    it('should convert non utf-8 string', (done) => {
-        expect("ḞԍНǏ𝙅ƘԸⲘ".toInt()).toEqual(jasmine.any(Number));
-        done();
-    });
-
-    it('should different number for different strings', (done) => {
-        expect("foo".toInt()).not.toEqual("bar".toInt());
-        done();
-    });
-
-    it('should convert multiline string', (done) => {
-        expect(`
-              first line
-              second line
-            `.toInt()).toEqual(jasmine.any(Number));
-        done();
-    });
-
-    it('should convert object String', (done) => {
-        expect((String("test")).toInt()).toEqual(jasmine.any(Number));
-        done();
-    });
-
-});
-
-describe('/convert int to int', () => {
-    it('should return the same number', (done) => {
-        expect("123".toInt()).toEqual(123);
-        done();
-    })
-})
-
 describe('/convert to set', () => {
 
     it('should convert string to one of array', (done) => {
@@ -130,11 +86,29 @@ describe('/convert to set', () => {
         done();
     })
 
+    it('should return different values for different strings', (done) => {
+        expect("foo".to(["a", "b"])).not.toEqual("bar".to(["a", "b"]));
+        done();
+    });
+
 });
 
 describe('/convert object with "to" method', () => {
     it('should preseve original "to" method', (done) => {
         expect(obj.to(["a", "b"])).toEqual("it works");
+        done();
+    })
+});
+
+describe('/should use with functions', () => {
+    it('should call correct function', (done) => {
+        let func1 = function (){
+            return "func1";
+        }
+        let func2 = function (){
+            return "func2";
+        }
+        expect(["func1", "func2"]).toContain(Math.random().to([func1, func2])());
         done();
     })
 });

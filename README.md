@@ -17,8 +17,13 @@ require('to-item');
 "Some String".to([10, 15, 20]);  //15
 
 //run AB test by cookie value
-let service = cookieValue.to([new ServiceA(), new ServiceB()]);
-service.run();
+let funcA = function(){
+    console.log("function A");
+}
+let funcB = function(){
+    console.log("function B");
+}
+cookieValue.to([funcA, funcB])();
 
 //get random ip from pool
 let host = Math.random().to(['10.0.0.120', '10.0.0.121', '10.0.0.122']);
