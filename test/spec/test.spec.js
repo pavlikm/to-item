@@ -1,11 +1,3 @@
-class SomeObject {
-    constructor() {
-    }
-    to() {
-        return 'it works';
-    }
-}
-let obj = new SomeObject();
 require('../../index');
 
 describe('/convert to set', () => {
@@ -95,7 +87,12 @@ describe('/convert to set', () => {
 
 describe('/convert object with "to" method', () => {
     it('should preseve original "to" method', (done) => {
-        expect(obj.to(["a", "b"])).toEqual("it works");
+        let SomeObject = {
+            to: function () {
+                return 'it works';
+            }
+        }
+        expect(SomeObject.to(["a", "b"])).toEqual("it works");
         done();
     })
 });
@@ -112,5 +109,4 @@ describe('/should use with functions', () => {
         done();
     })
 });
-
 

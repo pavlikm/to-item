@@ -10,8 +10,18 @@ Object.defineProperty(Object.prototype, 'to', {
             return Math.abs(h)
         }
 
+        function toString(obj){
+            let str = '';
+            for (const property in obj) {
+                if(obj.hasOwnProperty(property)){
+                    str += `${property}: ${obj[property]}`;
+                }
+            }
+            return str;
+        }
+
         if(typeof map === "undefined") return this.toString();
-        let int = toInt(this.toString());
+        let int = toInt(toString(this));
         let nodes = Array.from(map).sort((a, b) => a - b);
 
         return nodes[int % nodes.length];
