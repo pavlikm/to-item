@@ -1,4 +1,5 @@
 [![CodeQL](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/pavlikm/to-item/actions/workflows/codeql-analysis.yml)
+![Coverage](https://github.com/pavlikm/to-item/blob/master/public/badge.svg)
 
 # to-item
 to-item is polyfil for mapping any javascript Object to one item of given set, which can be again any Object.
