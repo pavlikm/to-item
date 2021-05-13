@@ -4,7 +4,7 @@
   "description": "converts object to one item of given set",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=text-summary --check-coverage jasmine JASMINE_CONFIG_PATH=./test/spec/test.json"
+    "test": "nyc --reporter=text-summary --reporter=json --check-coverage jasmine JASMINE_CONFIG_PATH=./test/spec/test.json"
   },
   "repository": {
     "type": "git",
