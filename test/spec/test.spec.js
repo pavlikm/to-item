@@ -8,6 +8,12 @@ describe('/convert to set', () => {
         done();
     });
 
+    it('should get item by number', (done) => {
+        let array = [1, 2, 3];
+        expect(array).toContain("1".to([1, 2, 3]));
+        done();
+    });
+
     it('should convert string to one of array with duplicates', (done) => {
         let array = [1, 2, 3];
         expect(array).toContain("test".to([1, 1, 1]));

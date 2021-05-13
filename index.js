@@ -1,8 +1,7 @@
 Object.defineProperty(Object.prototype, 'to', {
-    value: function (map){
+    value: function (map) {
 
-        function toInt(key){
-            if(parseInt(key).toString() === key) return Math.abs(parseInt(key));
+        function toInt(key) {
             key = toString(key);
             let h = 0, i = key.length;
             while (i > 0) {
@@ -11,17 +10,17 @@ Object.defineProperty(Object.prototype, 'to', {
             return Math.abs(h)
         }
 
-        function toString(obj){
+        function toString(obj) {
             let str = '';
-            for (const property in obj) {
-                if(obj.hasOwnProperty(property)){
+            for (let property in obj) {
+                if (obj.hasOwnProperty(property)) {
                     str += `${property}: ${obj[property]}`;
                 }
             }
-            return str || obj.toString();
+            return str || str.toString();
         }
 
-        if(typeof map === "undefined") return this;
+        if (typeof map === "undefined") return this;
         let int = toInt(toString(this));
         let nodes = Array.from(map).sort((a, b) => a - b);
 
