@@ -73,8 +73,9 @@ describe('/convert to set', () => {
         done();
     })
 
-    it('should return original string if no parameter is given', (done) => {
+    it('should return original object if no parameter is given', (done) => {
         expect("test".to()).toEqual("test");
+        expect(Array.isArray([1,2].to())).toEqual(true);
         done();
     })
 

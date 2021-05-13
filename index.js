@@ -20,7 +20,7 @@ Object.defineProperty(Object.prototype, 'to', {
             return str;
         }
 
-        if(typeof map === "undefined") return this.toString();
+        if(typeof map === "undefined") return this;
         let int = toInt(toString(this));
         let nodes = Array.from(map).sort((a, b) => a - b);
 
