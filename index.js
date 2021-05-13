@@ -3,6 +3,7 @@ Object.defineProperty(Object.prototype, 'to', {
 
         function toInt(key){
             if(parseInt(key).toString() === key) return Math.abs(parseInt(key));
+            key = toString(key);
             let h = 0, i = key.length;
             while (i > 0) {
                 h = (h << 5) - h + key.charCodeAt(--i) | 0;
@@ -17,7 +18,7 @@ Object.defineProperty(Object.prototype, 'to', {
                     str += `${property}: ${obj[property]}`;
                 }
             }
-            return str;
+            return str || obj.toString();
         }
 
         if(typeof map === "undefined") return this;
