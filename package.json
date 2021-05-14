@@ -1,6 +1,6 @@
 {
   "name": "to-item",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "converts object to one item of given set",
   "main": "index.js",
   "scripts": {
@@ -33,10 +33,11 @@
   },
   "homepage": "https://github.com/pavlikm/to-item#readme",
   "dependencies": {
-    "make-coverage-badge": "^1.2.0"
+
   },
   "devDependencies": {
     "jasmine": "^3.7.0",
-    "nyc": "^15.0.0"
+    "nyc": "^15.1.0",
+    "make-coverage-badge": "^1.2.0"
   }
 }
