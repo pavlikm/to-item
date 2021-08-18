@@ -1,11 +1,11 @@
 {
   "name": "to-item",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "converts object to one item of given set",
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=text-summary --reporter=json-summary --check-coverage jasmine JASMINE_CONFIG_PATH=./test/spec/test.json",
-    "test:badge": "npm test && make-coverage-badge --output-path ./public/badge.svg"
+    "test:badge": "npm test && npx make-coverage-badge --output-path ./public/badge.svg"
   },
   "jest": {
     "coverageReporters": [
@@ -32,12 +32,9 @@
     "url": "https://github.com/pavlikm/to-item/issues"
   },
   "homepage": "https://github.com/pavlikm/to-item#readme",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "jasmine": "^3.7.0",
-    "nyc": "^15.1.0",
-    "make-coverage-badge": "^1.2.0"
+    "nyc": "^15.1.0"
   }
 }
