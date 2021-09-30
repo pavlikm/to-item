@@ -1,4 +1,4 @@
-Object.defineProperty(Object.prototype, 'to', {
+Object.defineProperty(Object.prototype, 'toItem', {
     value: function (map) {
 
         function toInt(key) {

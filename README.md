@@ -15,7 +15,7 @@ Basic usage for mapping any object (for example string) to one item of given set
 ```javascript
 require('to-item');
 
-"Some String".to([10, 15, 20]);  //15
+"Some String".toItem([10, 15, 20]);  //15
 ```
 Run A-B test. Based of given cookie run one of method:
 ```javascript
@@ -27,19 +27,19 @@ let funcA = function(){
 let funcB = function(){
     console.log("function B");
 }
-cookieValue.to([funcA, funcB])();
+cookieValue.toItem([funcA, funcB])();
 ```
 Get random IP from pool:
 ```javascript
 require('to-item');
 
-let host = Math.random().to(['10.0.0.120', '10.0.0.121', '10.0.0.122']);
+let host = Math.random().toItem(['10.0.0.120', '10.0.0.121', '10.0.0.122']);
 ```
 Get tip of the day:
 ```javascript
 require('to-item');
 
-let tip = (new Date()).getDay().to(arrayOfDailyTips);
+let tip = (new Date()).getDay().toItem(arrayOfDailyTips);
 
 ```
 ... and many other use cases ;)
