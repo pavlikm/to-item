@@ -1,6 +1,6 @@
 {
   "name": "to-item",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "converts object to one item of given set",
   "main": "index.js",
   "scripts": {
